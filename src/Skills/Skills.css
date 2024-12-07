@@ -1,0 +1,83 @@
+/* General Styles */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Skill Container */
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Right Image */
+.skill-container-right img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 50%;
+  animation: fadeIn 5s ease-in-out infinite;
+}
+
+/* Skill Cards */
+.skill-card {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in Animation for Cards */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .skill-container-right img {
+    width: 80%;
+    max-width: 400px;
+  }
+  .skill-card {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skill-container-right img {
+    width: 100%;
+    max-width: 300px;
+  }
+  .skill-card {
+    width: 60px;
+    height: 60px;
+  }
+}

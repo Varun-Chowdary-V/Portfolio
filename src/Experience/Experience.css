@@ -1,0 +1,57 @@
+/* Experience Inner Container */
+.experience-inner-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 20px; /* Adds spacing between cards */
+}
+
+/* Cards Styling */
+.card {
+  width: 28rem;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Card Body */
+.card-body {
+  text-align: center; /* Centers text inside the card */
+}
+
+/* Responsive Design */
+
+/* For Tablets */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%; /* Adjust card width to fit within the screen */
+  }
+}
+
+/* For Mobile Devices */
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%; /* Full width for smaller devices */
+    margin: 10px; /* Reduced margin for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .card-title {
+    font-size: 1.2rem; /* Smaller title size */
+  }
+
+  .card-subtitle {
+    font-size: 1rem; /* Smaller subtitle size */
+  }
+
+  .card-text {
+    font-size: 0.9rem; /* Smaller text size */
+  }
+}

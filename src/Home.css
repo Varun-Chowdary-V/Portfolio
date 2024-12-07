@@ -1,0 +1,118 @@
+/* General Styling for Outer Containers */
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Inner Container Styling with Borders */
+.inner-container {
+  margin: 30px 20px;
+  padding: 20px;
+  border: 2px solid lightcoral;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Heading */
+h2 {
+  font-size: 2.5rem; /* Increased font size */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Paragraph */
+#biopara {
+  line-height: 1.8;
+  margin-top: 20px;
+  font-size: 1.2rem; /* Increased font size */
+  color: #555;
+  text-align: left;
+}
+
+/* Group Icons */
+.group-icons {
+  margin-top: 20px;
+  font-size: 2rem; /* Increased font size for icons */
+  display: flex;
+  justify-content: flex-start;
+}
+
+.home-icons {
+  margin: 10px;
+  color: lightcoral;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 2.5rem; /* Increased icon size */
+}
+
+.home-icons:hover {
+  transform: scale(1.2); /* Slightly larger on hover */
+  color: coral;
+}
+
+/* Image */
+#myimage {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Sub-container */
+.sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem; /* Adjusted for tablets */
+    text-align: center;
+  }
+
+  #biopara {
+    font-size: 1rem; /* Adjusted for tablets */
+    text-align: center;
+  }
+
+  .group-icons {
+    justify-content: center;
+  }
+
+  #myimage {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem; /* Adjusted for mobiles */
+  }
+
+  #biopara {
+    font-size: 0.9rem; /* Adjusted for mobiles */
+  }
+
+  .group-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-icons {
+    margin: 5px;
+    font-size: 2rem; /* Smaller icons for mobiles */
+  }
+
+  #myimage {
+    max-width: 200px;
+  }
+}

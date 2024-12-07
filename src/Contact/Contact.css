@@ -1,0 +1,15 @@
+.contact-container{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.contact-container a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.contact-container a i{
+    color:palegreen;
+}
+

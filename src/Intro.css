@@ -1,0 +1,127 @@
+/* Main Intro Container */
+.introcontainer {
+  display: flex;
+  flex-direction: row; /* Side-by-side layout */
+  color: black;
+  background-color: white;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Left Section: Card Container */
+.introleft {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Right Section: Background Image */
+.introright {
+  width: 50%;
+  background: url(../public/programmer3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Intro Card */
+.introcard {
+  border: none;
+  background-color: rgba(163, 245, 238, 0.8);
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center; /* Centers all text inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%; /* Makes the card responsive */
+  max-width: 500px;
+}
+
+/* Role Text (Software Developer) */
+.intro-role {
+  font-size: 1.5rem;
+  color: gray;
+  margin-bottom: 20px; /* Adds space below the role text */
+  display: block;
+}
+
+/* Name */
+#introname {
+  color: lightcoral;
+  font-size: 2rem;
+  margin-bottom: 20px; /* Adds space below the name */
+}
+
+/* Button */
+#introbtn {
+  border: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#introbtn:hover {
+  background-color: coral;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+
+/* For Tablets */
+@media screen and (max-width: 768px) {
+  .introcontainer {
+    flex-direction: column; /* Stacks content vertically */
+    height: auto; /* Adjusts height for stacked layout */
+  }
+
+  .introleft,
+  .introright {
+    width: 100%; /* Full width for each section */
+    height: auto;
+  }
+
+  .introright {
+    background-size: contain;
+  }
+
+  .introcard {
+    width: 90%;
+  }
+
+  .intro-role {
+    font-size: 1.2rem;
+  }
+
+  #introname {
+    font-size: 1.8rem;
+  }
+
+  #introbtn {
+    font-size: 0.9rem;
+  }
+}
+
+/* For Mobile Devices */
+@media screen and (max-width: 480px) {
+  .introcard {
+    padding: 20px 10px;
+  }
+
+  .intro-role {
+    font-size: 1rem;
+  }
+
+  #introname {
+    font-size: 1.5rem;
+  }
+
+  #introbtn {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+}
